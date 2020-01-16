@@ -1,0 +1,40 @@
+{% extends "admin/base.html" %}<!-- Plantilla base -->
+
+<!-- Seccion en la que se introduce el código -->
+{% block content %}
+
+<h1>Client Form</h1>
+
+<div class="row">
+	<div class="col-sm-12">
+		<section class="panel">
+			<header class="panel-heading">
+				GRID
+			</header>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Name</th>
+						<th>Address</th>
+						<th>Postal Code</th>
+						<th>Telephone number</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{ client.id }}</td>
+						<td>{{ client.name }}</td>
+						<td>{{ client.address }}</td>
+						<td>{{ client.postal_code }}</td>
+						<td>{{ client.telephone_number }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</div>
+</div>
+
+
+{% endblock %}
